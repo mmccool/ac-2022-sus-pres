@@ -1,5 +1,5 @@
 # AC 2022 Sustainability Presentation
-Presentation on Sustainability Considerations for AC2022 Panel session.
+Presentation on Sustainability Considerations for a [AC2022 Panel session](https://www.w3.org/2022/04/AC/ac-agenda.html#tuesday) on April 26, 2022.
 
 Uses HTML template, load the following into a browser (you may have to save it locally or install on a 
 web server first):
