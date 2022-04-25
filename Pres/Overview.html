@@ -47,7 +47,7 @@
    <h2>Outline</h2>
    <div class="columns">
     <div>
-    <h3>IoT</h3>
+    <h3>IoT/WoT</h3>
      <ul>
       <li>Vertical use cases</li>
       <li>Local vs. cloud</li>
@@ -62,8 +62,10 @@
      <h3>Discussion</h3>
      <ul>
       <li>Need for local security PKI infrastructure</li>
-      <li>Trust model</li>
+      <li>Need for metrics</li>
+      <!--
       <li>Distributed/Decentralized hybrids</li>
+      -->
       <li>Sustainability Considerations and wide review</li>
       <li>Business models and incentives</li>
      </ul>
@@ -72,7 +74,7 @@
   </section>
 
   <section class="slide">
-  <h2>IoT Sustainability Use Cases</h2>
+  <h2>WoT Sustainability Use Cases</h2>
    <div class="columns">
     <div>
     <h3>Cities</h3>
@@ -84,7 +86,7 @@
      <h3>Buildings</h3>
      <ul>
       <li>Heating/Cooling Management</li>
-      <li>Occupancy Sensors</li>
+      <li>Occupancy Sensing/Energy Management</li>
      </ul>
     </div>
     <div>
@@ -102,11 +104,43 @@
   </section>
 
   <section class="slide">
-  <h2>IoT Observations</h2>
+  <h2>Smart Building Use Cases</h2>
+   <div class="columns">
+    <div>
+     <p>Smart Buildings can:</p>
+      <ul>
+      <li>Reduce energy consumption when rooms are unoccupied</li>
+      <li>Anticipate and learn energy usage patterns</li>
+      <li>Shift energy demand to shave peak consumption</li>
+      <li>Manage power self-generation and grid interfacing</li>
+      </ul>
+    </div>
+    <div>
+     <img src="Siemens.jpg" alt="Siemens' Desigo CC is a Building Information Management system based on WoT that can be used to optimize energy consumption." />
+     Web of Things has been used in Building Information Management systems from 
+     <a href="https://new.siemens.com/global/en/products/buildings/automation/desigo.html
+">Siemens</a> and 
+     <a href="https://www.takenaka.co.jp/news/2021/05/02/">Takanaka Corporation</a>.
+     <!--
+     <img src="Takanaka.png" alt="Takanaka Corporation has been using WoT Thing Descriptions to document IoT services in its BIM systems"/>
+     -->
+    </div>
+   </div>
+  </section>
+
+  <section class="slide">
+  <h2>Smart Building Observations</h2>
   <ul>
-	  <li><em>Using the cloud for local energy-saving automations can be a net loss!</em></li>
+	  <li><em>Using the cloud for local energy-saving automations MAY be a net loss!</em></li>
 	  <li>Standards are needed to support secure local communication.</li>
 	  <li>Standards and business models need to be aligned to encourage adoption.</li>
+	  <li><em>HOWEVER:</em>
+		  <ul>
+			  <li>Local is not always better</li>
+			  <li>Sometimes cloud systems can be better managed and more energy-efficient</li>
+			  <li>What is really needed are metrics to allow good energy-usage decisions</li>
+		  </ul>
+	  </li>
   </ul>
   </section>
 
@@ -123,7 +157,7 @@
      </ul>
     </div>
     <div>
-     <img src="latency.png" alt="latency is serial overhead and limits speedup" />
+     <img src="latency.png" alt="Latency for communicating with the cloud is serial overhead and limits the speedup available from parallelization.  This graph shows that if cores on a local node and in the cloud are equivalent, to meet a certain frame rate (using reasonable value for framerate and network latencies) that more cores may be needed to perform a computation in the cloud than locally." />
     </div>
    </div>
   </section>
@@ -131,15 +165,18 @@
   <section class="slide" id="outline">
    <h2>Discussion</h2>
      <ul>
-      <li>"Localizing" compute when possible can improve sustainability 
+    <li>"Localizing" compute when possible <em>may</em> improve sustainability 
 	      <ul>
-      <li>Need for local security PKI infrastructure</li>
+		      <li>Need metrics to make informed decisions</li>
+      <li>Need local security PKI infrastructure</li>
       <li>Extended trust model supporting other computing resources</li>
 	      </ul></li>
+	      <!--
       <li>"Decentralized" mechanisms can solve some of these problems...
 	      <ul><li>...BUT need to be sustainably implemented</li>
       <li>Hybridize: use decentralized mechanisms only where essential</li>
 	      </ul></li>
+	      -->
       <li>Sustainability considerations and wide review in process?</li>
       <li>Business models and incentives need to be considered as well.
 	      <ul><li>A sustainable standard that is not adopted is not useful</li>
